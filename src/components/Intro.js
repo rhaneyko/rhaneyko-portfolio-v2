@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import "../css/NavBar.css";
 
 function Intro() {
-    const el = useRef(null);
+    const el = useRef('');
     const [open,setOpen]=useState(true);
 
     useEffect(() => {
