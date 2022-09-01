@@ -30,8 +30,8 @@ function Intro() {
             <div className="title">
                 <h1 ref={el}></h1>
             </div>
-            <Gretting className="intro-description">Desenvolvedor Front-End | Mobile.</Gretting>
-            <Gretting className="intro-description">Estudante de Análise e Desenvolvimento de Sistemas.</Gretting>
+            <p className="intro-description">Desenvolvedor Front-End | Mobile.</p>
+            <p className="intro-description">Estudante de Análise e Desenvolvimento de Sistemas.</p>
             <button 
                 className={`hamburguer ${open? "":"open"}`}
                 onClick={() => open?setOpen(false):setOpen(true)}
