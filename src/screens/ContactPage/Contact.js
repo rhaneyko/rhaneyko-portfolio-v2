@@ -1,7 +1,7 @@
-import Section from "./shared/Section";
+import Section from "../../components/shared/Section";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import "../css/Contact.css";
+import "./Contact.css";
 function Contact() {
     const ref=useRef(null);
     const isInView = useInView(ref, { once: false});

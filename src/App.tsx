@@ -1,9 +1,9 @@
 import './App.css';
-import Intro from './components/Intro';
-import AboutMe from './components/AboutMe';
+import Intro from './screens/HomePage/Intro';
+import AboutMe from './screens/AboutPage/AboutMe';
 import MyProjects from './components/MyProjects';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Contact from './screens/ContactPage/Contact';
+import Footer from './screens/CopyrightPage/Footer';
 function App() {
     return (
         <>

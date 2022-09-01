@@ -1,5 +1,5 @@
-import Section from "./shared/Section";
-import "../css/AboutMe.css";
+import Section from "../../components/shared/Section";
+import "./AboutMe.css";
 
 
 function AboutMe() {

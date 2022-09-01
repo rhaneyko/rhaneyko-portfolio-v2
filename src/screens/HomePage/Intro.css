@@ -1,18 +1,22 @@
+
+
 .header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+
 }
 .intro-description{
     width: 100%;
     max-width: 40rem;
 }
+
 .hamburguer{
     cursor: pointer;
     background-color: transparent;
     border: none;
-    content: url(../img/hamburguer.svg);
+    content: url(../../img/hamburguer.svg);
     display: flex;
     width: 1.5rem;
     height: auto;
@@ -23,7 +27,7 @@
 }
 .hamburguer.open{
     z-index: 2;
-    content: url(../img/close.svg);
+    content: url(../../img/close.svg);
     display: flex;
     z-index: 4;
 }
@@ -31,7 +35,6 @@
     display: flex;
     align-items: center;
     height: 6rem;
-    text-shadow: 0px 1px 20px var(--green-strong);
 
 }
 .typed-cursor{

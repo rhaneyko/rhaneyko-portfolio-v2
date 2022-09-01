@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
 
-    align-items: center;
+    height: 100vh;
     
     @media (max-width: 768px) {
         width: 125%;
@@ -59,6 +60,11 @@ export const Gretting = styled.p`
     @media (max-width: 768px) {
         font-size: 0.8rem;
     }
+
+    .intro-description{
+    width: 100%;
+    max-width: 40rem;
+}
 `;
 
 export const ButtonLnkd = styled.button`

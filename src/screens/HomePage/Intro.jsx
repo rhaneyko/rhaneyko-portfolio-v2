@@ -1,8 +1,11 @@
 import Typed from "typed.js";
 import { useState, useEffect, useRef  } from "react";
-import "../css/Intro.css";
-import NavBar from "./NavBar";
-import "../css/NavBar.css";
+import "./Intro.css";
+import NavBar from "../../components/NavBar";
+//import "../css/NavBar.css";
+import {
+  Container, Gretting
+} from './styles'
 
 function Intro() {
     const el = useRef('');
@@ -10,7 +13,7 @@ function Intro() {
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-          strings: ["Olá, meu nome é", "Rhaneyko."],         
+          strings: ["Rhaneyko."],         
           startDelay: 300,
           typeSpeed: 80,
           backSpeed: 100,
@@ -22,24 +25,24 @@ function Intro() {
       }, []);
 
     return ( 
-        <header className="header" id="intro">
+        <Container className="Container" id="intro">
             <p className="intro-greet">Olá, meu nome é</p> 
             <div className="title">
                 <h1 ref={el}></h1>
             </div>
-            <p className="intro-description">Desenvolvedor Front-End | Mobile.</p>
-            <p className="intro-description">Estudante de Análise e Desenvolvimento de Sistemas.|</p>
+            <Gretting className="intro-description">Desenvolvedor Front-End | Mobile.</Gretting>
+            <Gretting className="intro-description">Estudante de Análise e Desenvolvimento de Sistemas.</Gretting>
             <button 
                 className={`hamburguer ${open? "":"open"}`}
                 onClick={() => open?setOpen(false):setOpen(true)}
             >
             </button>
-            <NavBar
+            {/* <NavBar
                 classNav={`navBar ${open? "":"open"}`}
                 isOpen={open}
                 onLinkClick={() => open?setOpen(false):setOpen(true)}
-            />
-        </header>
+            /> */}
+        </Container>
      );
 }
 
