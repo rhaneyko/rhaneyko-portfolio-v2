@@ -1,20 +1,21 @@
-import './App.css';
-import Intro from './screens/HomePage/Intro';
-import AboutMe from './screens/AboutPage/AboutMe';
-import MyProjects from './components/MyProjects';
-import Contact from './screens/ContactPage/Contact';
-import Footer from './screens/CopyrightPage/Footer';
-function App() {
-    return (
-        <>
-            <Intro/>
-            <main>
-                <AboutMe/>
-                <MyProjects/>
-                <Contact/>
-            </main>
-            <Footer/>
-        </>
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+
+
+import Navbar from './components/Navbar';
+import Layout from './components/Layout';
+
+import GlobalStyles from './styles/GlobalStyles';
+import theme from './styles/theme/theme';
+
+ const App = () => {
+   
+  return (
+    <ThemeProvider theme={theme}>
+       <Navbar/>
+       <Layout />
+       <GlobalStyles/>
+    </ThemeProvider>
     );
 }
 

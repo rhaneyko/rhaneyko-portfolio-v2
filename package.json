@@ -13,7 +13,9 @@
     "framer-motion": "^7.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-elastic-carousel": "^0.11.5",
     "react-icons": "^4.4.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-typed": "^1.2.0",
     "styled-components": "^5.3.5",
@@ -45,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router-hash-link": "^2.4.5",
     "@types/styled-components-react-native": "^5.1.3"
   }
 }
