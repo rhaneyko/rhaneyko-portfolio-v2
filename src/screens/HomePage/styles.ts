@@ -8,7 +8,15 @@ export const Container = styled.div`
 
     height: 100vh;
 
+    
+
     background-color: red;
+
+    .typed-cursor{
+    color: ${props => props.theme.colors.title};
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+}
     
     @media (max-width: 768px) {
         width: 125%;
@@ -25,6 +33,7 @@ export const Main = styled.div`
     align-items: center;
 
     background-color: white;
+   
 
     @media ( max-width: 768px ) {
         width: 100%;
@@ -33,16 +42,12 @@ export const Main = styled.div`
     }
 `;
 
-export const Name = styled.h1`
+export const Name = styled.div`
     display: flex;
-    
-    margin-left: 0.5rem;
-
-    font-size: 2rem;
+    align-items: center;
 
     color: ${props => props.theme.colors.title};
-
-    animation: typing 3s 0s normal both,blinkCursor 1s infinite normal;
+    font-size: 2rem;
     
     @media ( max-width: 768px ){
         font-size: 1.5rem;
@@ -50,7 +55,7 @@ export const Name = styled.h1`
 `;
 
 export const PresentationText = styled.p`
-    font-size: 1.25rem;
+    font-size: 3rem;
     line-height: 2rem;
     
     margin: 10px 10px 10px 10px;
@@ -65,4 +70,11 @@ export const PresentationText = styled.p`
 
 export const Icons = styled.div`
 
-`
+`;
+
+export const AboutButton = styled.button`
+    width: 100px;
+    height: 40px;
+    
+    background-color: blue;
+`;

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import Typed from 'typed.js'
 
 import { 
     Container,
@@ -6,11 +7,28 @@ import {
     Name,
     PresentationText,
     Icons,
+    AboutButton,
     } from './styles'
 
   import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
+type T =  any
+
 const HomePage  = () => {
+  const el = React.useRef(null) as React.MutableRefObject<T>;
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ['Rhaneyko.'],
+      startDelay: 300,
+      typeSpeed: 80,
+      backSpeed: 100,
+      backDelay: 100
+    })
+    return () => {
+      typed.destroy()
+    }
+  }, [])
+
   const openLinkedin = () => {
     window.open('https://www.linkedin.com/in/rhaneyko-honorio-73657819b')
   }
@@ -24,25 +42,29 @@ const HomePage  = () => {
   }
 
   return (
-
     <Container className='Home' id='home'>
-         <Main>
-             <PresentationText>Olá, meu nome é</PresentationText>
-                 <Name>Rhaneyko</Name> 
+               <Main>
+                <PresentationText>Olá, meu nome é</PresentationText>
+                 <Name>
+                    <h1 ref={el}></h1>
+                  </Name> 
+              <PresentationText>Desenvolvedor Front-End</PresentationText>   
              <Icons>
                 <AiFillLinkedin 
                   onClick={(openLinkedin)}
                   size={40}
                   color='#0E76A8' 
-                />
+                  />
 
                 <AiFillGithub 
                   onClick={(openGithub)}
                   size={40}
-                />
+                  />
              </Icons>  
-                   
-         </Main>
+         <AboutButton>
+            <p>Sobre mim</p>
+         </AboutButton>
+                  </Main>
     </Container>
   )
 }
