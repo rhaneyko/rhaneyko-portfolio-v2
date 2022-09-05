@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 
-import Navbar from './components/Navbar';
+
 import Layout from './components/Layout';
 
 import GlobalStyles from './styles/GlobalStyles';
@@ -12,7 +12,7 @@ import theme from './styles/theme/theme';
    
   return (
     <ThemeProvider theme={theme}>
-       <Navbar/>
+       {/* <Navbar/> */}
        <Layout />
        <GlobalStyles/>
     </ThemeProvider>

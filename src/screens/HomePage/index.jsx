@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Typed from 'typed.js'
+
 import { 
     Container,
     Main,
@@ -19,21 +19,6 @@ const HomePage  = () => {
   const openCv = () => {
     window.open('https://docs.google.com/document/d/1KvDZJcTW8Ax8-e7WGraptYDfIpci6feFltp8bsQS6MY/edit')
   }
-
-  // const el = useRef('');
-
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: ["Rhaneyko."],         
-  //     startDelay: 300,
-  //     typeSpeed: 80,
-  //     backSpeed: 100,
-  //     backDelay: 100
-  //   });
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
 
   return (
 
