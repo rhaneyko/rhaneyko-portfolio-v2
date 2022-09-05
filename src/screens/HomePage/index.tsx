@@ -1,13 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect } from 'react'
 import Typed from 'typed.js'
 
 import { 
     Container,
     Main,
+    Text,
     Name,
     PresentationText,
     Icons,
-    AboutButton,
+    LinkedinButton,
+    GithubButton,
+    AboutMe,
     } from './styles'
 
   import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
@@ -16,9 +19,10 @@ type T =  any
 
 const HomePage  = () => {
   const el = React.useRef(null) as React.MutableRefObject<T>;
+  
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Rhaneyko.'],
+      strings: ['Olá, meu nome é Rhaneyko.'],
       startDelay: 300,
       typeSpeed: 80,
       backSpeed: 100,
@@ -43,29 +47,37 @@ const HomePage  = () => {
 
   return (
     <Container className='Home' id='home'>
-               <Main>
-                <PresentationText>Olá, meu nome é</PresentationText>
-                 <Name>
-                    <h1 ref={el}></h1>
-                  </Name> 
-              <PresentationText>Desenvolvedor Front-End</PresentationText>   
-             <Icons>
-                <AiFillLinkedin 
-                  onClick={(openLinkedin)}
-                  size={40}
-                  color='#0E76A8' 
-                  />
+        <Main>
+          <Text>
+            <Name>
+              <h1 ref={el}></h1>
+            </Name> 
+            <PresentationText>Desenvolvedor Front-End</PresentationText>   
+          </Text>
 
-                <AiFillGithub 
-                  onClick={(openGithub)}
-                  size={40}
-                  />
-             </Icons>  
-         <AboutButton>
-            <p>Sobre mim</p>
-         </AboutButton>
-                  </Main>
+          <AboutMe>
+           <h1>Sobre mim</h1>
+           <p>Tenho 19 anos, sou estudante de Análise e Desenvolvimento de Sistemas, estou sempre buscando conhecimento na área de Desenvolvimento Web. Estudo programação desde o ano de 2020, sempre procurei por conteúdos no YouTube, lendo documetações e colocando tudo em prática. Estou sempre buscando conhecimentos além da faculdade. </p>
+          </AboutMe>
+
+         <Icons>
+           <LinkedinButton 
+            onClick={openLinkedin}>
+             <AiFillLinkedin 
+              color='#0E76A8' 
+              size={40} />
+           </LinkedinButton>
+
+           <GithubButton 
+            onClick={openGithub}>
+             <AiFillGithub 
+              color='#000' 
+              size={40} />
+           </GithubButton>
+         </Icons>  
+        </Main>
     </Container>
   )
 }
+
 export default HomePage;
