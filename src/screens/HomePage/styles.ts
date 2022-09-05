@@ -4,8 +4,11 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     height: 100vh;
+
+    background-color: red;
     
     @media (max-width: 768px) {
         width: 125%;
@@ -15,19 +18,13 @@ export const Container = styled.div`
     }
 `;
 
-export const NavigationPages = styled.div`
-    display: flex;
-`;
-
 export const Main = styled.div`
     display: flex;
     flex-direction: column;
-
     justify-content: center;
+    align-items: center;
 
-    width: 50vw;
-
-    padding-left: 3.5rem;
+    background-color: white;
 
     @media ( max-width: 768px ) {
         width: 100%;
@@ -44,13 +41,15 @@ export const Name = styled.h1`
     font-size: 2rem;
 
     color: ${props => props.theme.colors.title};
+
+    animation: typing 3s 0s normal both,blinkCursor 1s infinite normal;
     
     @media ( max-width: 768px ){
         font-size: 1.5rem;
     }
 `;
 
-export const Gretting = styled.p`
+export const PresentationText = styled.p`
     font-size: 1.25rem;
     line-height: 2rem;
     
@@ -60,74 +59,10 @@ export const Gretting = styled.p`
     @media (max-width: 768px) {
         font-size: 0.8rem;
     }
-
-    .intro-description{
-    width: 100%;
-    max-width: 40rem;
-}
-`;
-
-export const ButtonLnkd = styled.button`
-    display: flex;
-    flex-direction: row;
-
-    justify-content: center;
-    align-items: center;
     
-    width: 120px;
-    height: 40px; 
-
-    margin: 20px 0px 10px 10px;
-    
-    border: 1px solid ${props => props.theme.colors.borderButton};
-    border-radius: 5px;
-    
-    background-color: ${props => props.theme.colors.button};
-
-    outline: 0;
-    cursor: pointer;
-
-    @media ( max-width: 768px ){
-         height: 40px;
-    }
-`;
-
-export const ButtonCv = styled.button`
-    width: 120px;
-    height: 40px;
-    
-    border: 1px solid ${props => props.theme.colors.borderButton};
-    border-radius: 5px;
-    
-    margin-left: 140px;
-    margin-top: -50px;
-
-
-    background-color: ${props => props.theme.colors.button};
-
-    outline: 0;
-    cursor: pointer;
-`;
-
-export const ButtonTextLnkd = styled.p`
-    font-size: 0.8rem;
-    font-weight: bold;
-
-    color: ${props => props.theme.colors.buttonText};
-`;
-
-export const ButtonTextCv = styled.p`
-    font-size: 0.8rem;
-    font-weight: bold;
-
-    color: ${props => props.theme.colors.buttonText};
 `;
 
 
-export const Image = styled.img`
-    margin-top: 7%;
-    margin-left: 10%;
-    @media (max-width: 768px) {
-        display: none;
-    }
-`;
+export const Icons = styled.div`
+
+`
