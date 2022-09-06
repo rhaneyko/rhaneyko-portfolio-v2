@@ -15,7 +15,7 @@ import {
 
   import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
-type T =  any
+type T = any;
 
 const HomePage  = () => {
   const el = React.useRef(null) as React.MutableRefObject<T>;
