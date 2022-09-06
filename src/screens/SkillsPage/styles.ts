@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     display: flex;
-
-    height: 30vh;
+    height: 80vh;
 
     justify-content: center;
     align-items: center;
@@ -14,14 +13,26 @@ export const Container = styled.div`
     } 
 `;
 
-export const Image = styled.img`
-    width: 25vw;
-`;
-
 export const Skills = styled.div`
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 40rem;
     margin-bottom: 3rem;
+
+    background-color: red;
+
+    .icons{
+        margin: 20px;
+
+
+        :hover{
+            p{
+
+            }
+        }
+
+    }
 
     @media (max-width: 768px) {
         width: 100%;
@@ -30,11 +41,37 @@ export const Skills = styled.div`
     }
 `;
 
+export const Icon = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+
+    height: 100px;
+
+    margin: 10px;
+
+    
+
+    :hover{
+        width: 80%;
+
+        p{
+            display: inline;
+            width: 400px;
+
+            text-align: justify;
+        }
+    }
+
+
+`;
+
 export const Title = styled.h1`
     display: flex;
 
     margin-bottom: 2%;
 
+    
     font-size: 2rem;
     line-height: 3rem;
     color: ${props => props.theme.colors.title};
@@ -45,12 +82,9 @@ export const Title = styled.h1`
 `;
 
 export const TextAbout = styled.p`
-    display: flex;
-
-    font-size: 1rem;
-    color: ${props => props.theme.colors.text};
-
+    
     @media (max-width: 768px) {
         font-size: 0.8rem;
     }
 `;
+
