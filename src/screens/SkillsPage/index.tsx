@@ -1,4 +1,4 @@
-import { Container, Title, About, TextAbout } from "./styles";
+import { Container, Title, Skills, TextAbout } from "./styles";
 
 import { SiCss3, SiFirebase, SiJavascript, SiReact, SiTypescript, SiHtml5,  } from 'react-icons/si';
 
@@ -6,7 +6,7 @@ import { SiCss3, SiFirebase, SiJavascript, SiReact, SiTypescript, SiHtml5,  } fr
 const SkillsPage: React.FC = () => {
   return (
     <Container id="about">
-      <About>
+      <Skills>
         <Title>Conhecimentos</Title>
          <SiHtml5
            size={50}
@@ -32,7 +32,7 @@ const SkillsPage: React.FC = () => {
            size={50}
            color='#FFC526'
          />
-      </About>
+      </Skills>
     </Container>
   );
 };

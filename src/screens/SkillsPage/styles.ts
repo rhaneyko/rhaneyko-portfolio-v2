@@ -18,7 +18,7 @@ export const Image = styled.img`
     width: 25vw;
 `;
 
-export const About = styled.div`
+export const Skills = styled.div`
     width: 100%;
     max-width: 40rem;
     margin-bottom: 3rem;
