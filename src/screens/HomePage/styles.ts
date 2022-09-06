@@ -99,11 +99,8 @@ export const GithubButton = styled.button`
 export const AboutMe = styled.div`
     display: flex;
     flex-direction: column;
-
-    
     
     width: 550px;
-    
     
     h1{
         text-align: center;

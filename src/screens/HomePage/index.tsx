@@ -46,7 +46,7 @@ const HomePage  = () => {
   }
 
   return (
-    <Container className='Home' id='home'>
+    <Container className='section' id='home'>
         <Main>
           <Text>
             <Name>
