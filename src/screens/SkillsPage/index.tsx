@@ -8,7 +8,7 @@ import {
   DescriptionAboutSkill,
 } from "./styles";
 
-import { SiCss3, SiFirebase, SiJavascript, SiReact, SiTypescript, SiHtml5,  } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiFirebase, SiJavascript, SiReact, SiTypescript, } from 'react-icons/si';
 
 
 const SkillsPage: React.FC = () => {
@@ -80,7 +80,6 @@ const SkillsPage: React.FC = () => {
            </TextAbout> */}
          </Icon>
         </Icons>
-         <DescriptionAboutSkill></DescriptionAboutSkill>
       </Skills>
     </Container>
   );
