@@ -8,8 +8,6 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    background-color: blue;
-
     @media (max-width: 768px) {
         width: 125%;
         justify-content: center;
@@ -19,11 +17,12 @@ export const Container = styled.div`
 export const Skills = styled.div`
     display: flex;
     flex-direction: row;
+
+    justify-content: center;
     
     width: 700px;
 
     margin-bottom: 3rem;
-    background-color: red;
 
     .icons{
         margin: 20px;
