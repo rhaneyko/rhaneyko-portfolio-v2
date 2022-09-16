@@ -2,29 +2,23 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     
-    height: 50vh;
+    height: 30vh;
 
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-
-    background-color: red;
 
     @media (max-width: 768px) {
         width: 125%;
         height: 75vh;
         flex-direction: column;
     }
-
 `; 
 
 export const Title = styled.h1`
-   
-
-    //margin-right: 10vw;
-    margin-bottom: 10vw;
+    margin-bottom: 50px;
 
     font-size: 2rem;
 
@@ -37,8 +31,6 @@ export const Title = styled.h1`
 `; 
 
 export const Contacts = styled.div`
-    //margin-left: -300px;
-
     align-items: center;
 
     @media (max-width: 768px) {
