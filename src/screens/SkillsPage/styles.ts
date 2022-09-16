@@ -14,6 +14,7 @@ export const Container = styled.div`
     } 
 `;
 
+
 export const Skills = styled.div`
     display: flex;
     flex-direction: row;

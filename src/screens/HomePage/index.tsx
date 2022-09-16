@@ -14,6 +14,7 @@ import {
     } from './styles'
 
   import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
+  import { } from 'react-icons'
 
 type T = any;
 
