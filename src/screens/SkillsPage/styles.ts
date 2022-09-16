@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 export const Skills = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
     width: 700px;
 
@@ -45,7 +45,7 @@ export const Skills = styled.div`
 
 export const Icons = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 `;
 
 export const Icon = styled.div`
